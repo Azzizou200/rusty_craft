@@ -1,0 +1,13 @@
+[package]
+name = "rust_craft"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wgpu = "22"
+winit = "0.30"          # Window creation & event loop
+pollster = "0.3"        # Block on async (simple alternative to tokio)
+glam = "0.29"           # Math: vectors, matrices, quaternions
+bytemuck = { version = "1", features = ["derive"] }  # Cast structs to bytes
+log = "0.4"
+env_logger = "0.11"
