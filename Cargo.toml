@@ -4,10 +4,12 @@ version = "0.1.1"
 edition = "2024"
 
 [dependencies]
-wgpu = "22"
-winit = "0.30"          # Window creation & event loop
-pollster = "0.3"        # Block on async (simple alternative to tokio)
-glam = "0.29"           # Math: vectors, matrices, quaternions
-bytemuck = { version = "1", features = ["derive"] }  # Cast structs to bytes
+anyhow = "1"
 log = "0.4"
-env_logger = "0.11"
+cgmath = "0.18"
+png = "0.17"
+pretty_env_logger = "0.5"
+thiserror = "1"
+tobj = { version = "3", features = ["log"] }
+vulkanalia = { version = "=0.35.0", features = ["libloading", "provisional", "window"] }
+winit = "0.29"
